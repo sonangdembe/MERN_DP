@@ -1,0 +1,41 @@
+npm :- Node package m anager
+
+npm init :- just to initialized the projects
+
+npm init :- to describe the your view points or about your projects 
+
+npm init -y :- if you feel so annoying about the question asked in npm init you can use this command
+
+// -------------------npm-----------------
+
+npm  (node package manager)
+
+- npm contains all the products or the packages and when ever you needed you can bring and use It ( it is the container that contains all the packages you needed)
+
+Why do we need npm?
+
+
+What is express?
+- express  is nodejs framework 
+
+
+https://www.npmjs.com/  this is the website you can visit for the express
+a place where developers can find, build and manage code packages
+
+- npm install (package name) :- iif you wants patricular things from the npm then you have to write this cmd  i.e if you wants express then [npm install express]
+[it demerits is it will developed others folder too and you will be confused which package is developed]
+- if you  feel bored then you can [use npm i express] 
+- Above cmd developed the package-lock.json and node_modules [ Here  node_modules is the unwanted folder as we discussed above ]
+   // // npm install expres so here is express
+    // 4.18.2 ((major.minor.patch))
+
+- Package-lock.json :- it just the package which is developed when we install the certain things
+
+
+//------------------ Port no
+0-65535
+0-1100 :- (internal port) you cannot use because these port are used for the internal evaluations
+above 1100 :- You can use these port no. but should use the similar port because that particular port is already  inuse
+
+
+//----------------- local host:3000 == 127.0.0.1:3000
