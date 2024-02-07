@@ -13,7 +13,10 @@ npm  (node package manager)
 - npm contains all the products or the packages and when ever you needed you can bring and use It ( it is the container that contains all the packages you needed)
 
 Why do we need npm?
-
+- packkage management
+- version control
+- Command line interface+
+npm or the node package manager is the package manager in the JS
 
 What is express?
 - express  is nodejs framework 
@@ -38,4 +41,13 @@ a place where developers can find, build and manage code packages
 above 1100 :- You can use these port no. but should use the similar port because that particular port is already  inuse
 
 
-//----------------- local host:3000 == 127.0.0.1:3000
+//----------------- local host:3000 == 127.0.0.1:3000 [is same things]
+
+
+//-------------------------------GK
+this is so annoying that you have to run the cmsd [npm <folder_name>] every time so  you can instsll the nodemon package manager
+- To install the package manager you just need to follow these steps
+1. npm install -g nodemon
+2. nodemon app.js
+3. npm start
+ 
