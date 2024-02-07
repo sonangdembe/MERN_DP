@@ -1,0 +1,16 @@
+Http status code
+ 
+ 1xx - informatons
+ 2xx - success [if the requst is successful]
+ 3xx - redirect [if the certain server locations is changed then error starting from 3xx will throow]
+ 4xx - Client error [This is the mistake done by the client i.e if the code is not written properly or search the  things]
+ 5xx - server/Internal [Hosting error, This is the mistake in the server]
+
+ 529 - [To many request/ service unavaliable]
+ 
+ //------------------Http verbs/methods
+ Get - used when you have to asked somethings to browser
+ POST -  when you have to send somryhings
+PATCH - wHEN YOU  have to update somethings special
+PUT - it will update all the task
+DELETE - it will delete all the things
