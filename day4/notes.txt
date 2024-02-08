@@ -1,0 +1,35 @@
+// to install the nodemon 
+- npm install nodemon
+2. npm install -g nodemon ( is best way to practise)
+
+
+
+// if you donn't wanna use third party
+node --watch app.js <file name>
+
+
+JSON
+(javascript object notation)
+ it's functions
+ - to store the data
+ - to transfer the stored data 
+
+// mongodb 
+
+1. create the new projects
+2. Name the projects name ( tap to next next)
+3. create the new projects and the click the database  tab in the right side of the screen
+4. create the deployment in the database and then
+
+
+
+
+
+
+
+
+
+ORM = object relation model (sql)
+ODM = object data model (nosql)
+
+
