@@ -16,7 +16,7 @@ async function connectToDatabse(){
 connectToDatabse();
 
 
-//----------------------------------------------------------Create ------------------------------------------------------------
+//----------------------------------------------            Create                    -------------------------------------
 //operations from the ./model./bookSchema.js
 app.post("/book",async(req,res)=>{
      console.log(req.body); // Now check in postman using the url'http//:localhost:3000/book" using the POST then send the request And you will not get any data you will just see the sending request. So, send the data
@@ -60,12 +60,71 @@ app.post("/book",async(req,res)=>{
 // and to add the more books just edit  the postman author and otheres you wanna edit then it will show the result in the table
 // _id has the different number from each other abd you can neglate it too
 
-//--------------------------------------------------------------Read----------------------------------------------------------------------
-// even ./book is same but they are different api because post and get are different
 
-    app.post("/book",async(req,res)=>{
-        Book.find()
+
+
+
+
+
+
+
+
+//--------------------------------------------------         Read             ----------------------------------------------------------------------
+// even ./book is same but they are different api because post and get are different
+app.get("/book",async (req,res)=>{
+        const books = await Book.find()
+        res.status(200).json({
+            message : "Books fetched successfully",
+            data : books
+            // This code will read the whole code in the .So, to read the specific book only we have to do this things
+
+        })
     })
+
+
+
+
+
+//---------------------------------------------read single book-------------------------------------
+app.get("/book/:id",async (req,res)=>{
+    // Here we can put / in id to but it will display that book only so to make it dynamic we have to use :
+    
+    // console.log(req.params.id)   // this will display the id of the books in terminal
+    // to see the value which id is being display insert the folowing code
+    const id = req.params.id
+    const book = await Book.findById(id)    
+     // if it find the id of that paticular than it will give the informations
+// Notes-----------
+// find will return array and findById return objects
+    res.status(200).json({
+        message : "Single Book Triggered",
+        data :book
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 app.listen(3000,()=>{
     console.log('Server is running on http://localhost:3000');
