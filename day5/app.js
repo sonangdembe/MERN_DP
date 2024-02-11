@@ -69,7 +69,7 @@ app.post("/book",async(req,res)=>{
 
 
 
-//--------------------------------------------------         Read             ----------------------------------------------------------------------
+//--------------------------------------------------         Read all book          ----------------------------------------------------------------------
 // even ./book is same but they are different api because post and get are different
 app.get("/book",async (req,res)=>{
         const books = await Book.find()
@@ -102,6 +102,27 @@ app.get("/book/:id",async (req,res)=>{
     })
 })
 
+//--------------------------------     update         ------------------------------------------------------
+// somepeople must can edit the book list or any things, and that things can be done through _id of the book
+// findByIdandUpdate() to update
+
+app.patch("/book/:id",async (req,res)=>{
+         const id = req.params.id; // id is the book you wanna update
+         const {bookName,bookPrice,authorName,publication,publishedAt,isbnNumber} = req.body
+         await Book.findByIdAndUpdate(id,{
+            // what do you wanna update list down
+            bookName,
+            bookPrice,
+            authorName,
+            publication,
+            isbnNumber,
+            publishedAt
+         })
+res.status(200).json({
+    message : "Book updated Successfully"
+})
+
+})
 
 
 
@@ -119,7 +140,19 @@ app.get("/book/:id",async (req,res)=>{
 
 
 
+// -------------------------           Delete    -------------------------
+// findByIdAndDelete() to delete
 
+app.delete("/book/:id",async(req,res)=>{
+    const id = req.params.id
+    await Book.findByIdAndDelete(id)
+    res.status(200).json({
+        message : "Book deletes successfully"
+    })
+    // delete will return null
+    // find will return array
+    // findById will return object
+})
 
 
 

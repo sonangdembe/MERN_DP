@@ -16,3 +16,20 @@ CRUD(creat read update delete) is the basic foundations of the all types of the 
 -----------------------undefine even req.body-----------------
 nodejs is runtime enviroment and express doesn't understand what is send in the 'req.body'
 
+
+// ----------------------postman------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+// REST API
+// RESTFULAPI
