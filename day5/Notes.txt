@@ -1,0 +1,18 @@
+// Start Projects
+// Book Management System
+CRUD(creat read update delete) is the basic foundations of the all types of the systems  
+
+--------------------- to operates through the postman to the backend
+// Now check in postman using the url'http//:localhost:3000/book" using the POST then send the request And you will not get any data you will just see the sending request. So, send the data
+     // now have to send the data from the postman becausse in backend there will be any frontend so now you have to use the postman as the frontend.So, now from the postman you will send the data and think that data came from the frontend,nodejs,etc;
+     //1. select the 'body' from the postman
+     //2.  Then there there is the  'none' click
+     //3. Choose the 'raw'
+     //4. Choose the  'JSON'
+     // body > none > raw > JSON
+
+
+
+-----------------------undefine even req.body-----------------
+nodejs is runtime enviroment and express doesn't understand what is send in the 'req.body'
+
