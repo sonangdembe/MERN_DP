@@ -1,0 +1,16 @@
+// how to send files (images,video,documents) in nodeJs
+// Why file handling is importent
+- because we have to handle the file send by the users
+
+// nodeJs can uderstand the JSON  but cannot understand the file handling
+
+so, we have to use such package whcih can understand the  file handling
+-----------multer is the package which can understand by the nodeJs
+multer =  it is the middleware,to check the 
+
+- functions of the middleware
+1. to check wheather user can access site or not 
+2.  all the file will be recorded in server not in database,database will saves the locations
+
+- to install multer
+npm install  multer
