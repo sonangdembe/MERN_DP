@@ -20,3 +20,27 @@ Graph API
 
 //------------------------ 15/11/2080-------------------
 Tailwind :- It is made by 2 person 
+
+
+
+//------------------19/11/2080-----------------
+1. Why we need it ?
+- CSRF(cross site request forgery)
+- 
+
+sandBox
+- it is the enviroment that makes isolations for the differents tabs
+
+
+1. SOP (Same Origin Policy)
+-  protocol,port,hostname of current origin and cross origin (yo sabaii same hunu parxa ani matra hunxa)
+- This came to solve CSRF problems
+
+2. CORS(Cross origin resource sharing)
+- https://abc.com             https://api.abc.com
+these will not communicated be because it voilates the SOP protocol
+
+- https://hacker.com          https://server.com
+these will not communicated
+
+- 
