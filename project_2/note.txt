@@ -1,0 +1,22 @@
+Soap API
+- it is the traditional API
+- Simple Object Access Protocol
+
+Rest 
+- api are written in happazedly
+
+
+RESTFUL
+- must write in appropriate name
+
+
+Graph API
+- It solves the overfacing and underfacing
+- there will be only one api
+1. Query : That is used retrieved the data
+2. Mutation : something to add
+3. Subscriptions : when third party is suscribed and immediate reactions is takes place
+
+
+//------------------------ 15/11/2080-------------------
+Tailwind :- It is made by 2 person 
